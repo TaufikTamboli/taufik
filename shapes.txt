@@ -1,0 +1,140 @@
+package shapes;
+
+public class shape {
+	
+	void calarea() {
+		
+	}
+    void drawshape() {
+    	
+    }
+    void colorshape() {
+    	
+    }
+    void fillshape() {
+    	
+    }
+    void identifyshape() {
+    	
+    }
+}
+
+
+package shapes;
+
+public class square extends shape {
+
+	void calarea() {
+    	
+    	System.out.println("area of square is 44 ");
+    			
+	}
+    void drawshape() {
+    	System.out.println("square is draw");
+    	
+    }
+    void colorshape() {
+    	System.out.println("square is colored");
+    	
+    }
+    void fillshape() {
+    	System.out.println("square is filled");
+    	
+    }
+    void identifyshape() {
+    	System.out.println("square is identified");
+    }
+}
+
+package shapes;
+
+public class rectangle extends shape {
+	void calarea() {
+    	float c = 3.14f*3*3;
+    	System.out.println("area of rectangle is "+c);
+    			
+	}
+    void drawshape() {
+    	System.out.println("rectangle is draw");
+    	
+    }
+    void colorshape() {
+    	System.out.println("rectangle is colored");
+    	
+    }
+    void fillshape() {
+    	System.out.println("rectangle is filled");
+    	
+    }
+    void identifyshape() {
+    	System.out.println("rectangle is identified");
+    }
+}
+
+package shapes;
+
+public class circle extends shape{
+	
+    void calarea() {
+    	float c = 3.14f*3*3;
+    	System.out.println("area of circle is "+c);
+    			
+	}
+    void drawshape() {
+    	System.out.println("circle is draw");
+    	
+    }
+    void colorshape() {
+    	System.out.println("circle is colored");
+    	
+    }
+    void fillshape() {
+    	System.out.println("circle is filled");
+    	
+    }
+    void identifyshape() {
+    	System.out.println("circle is identified");
+    }
+}
+
+package shapes;
+
+public class testshapes {
+	
+	void runallshape (shape s) {
+		s.calarea();
+		s.drawshape();
+		s.colorshape();
+		s.fillshape();
+		s.identifyshape();
+		
+	}
+	public static void main(String[] args) {
+		testshapes tt= new testshapes ();
+		shape c1 = new circle ();
+		tt.runallshape(c1);
+		
+		shape s1 = new square();
+		tt.runallshape(s1);
+		
+		shape p1 = new rectangle();
+		tt.runallshape (p1);
+		
+		
+		
+	}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
